@@ -19,34 +19,97 @@
 
     <main> 
         <header class="topbar">
-            <h1>Dashboard</h1>
+            <div>
+                <h1>Dashboard</h1>
+                <p class="page-description">ภาพรวมข้อมูลการแข่งขันฟุตบอลพรีเมียร์ลีก</p>
+            </div>
             <input type="text" placeholder="Search...">
         </header>
 
         <section class="content">
-            <article class="card"><h2>Total Teams</h2><p>20</p></article>
-            <article class="card"><h2>Total Players</h2><p>500</p></article>
-            <article class="card"><h2> Matches played</h2><p>380</p></article>
-            <article class="card"><h2>Upcoming Matches</h2><p>1024</p></article>
+            <article class="card">
+                <h2>Total Teams</h2>
+                <p class="card-value">20</p>
+                <p class="card-description">จำนวนทีมที่เข้าร่วมการแข่งขันในฤดูกาลนี้</p>
+            </article>
+            <article class="card">
+                <h2>Total Players</h2>
+                <p class="card-value">500</p>
+                <p class="card-description">นักเตะทั้งหมดที่ลงทะเบียนในระบบ</p>
+            </article>
+            <article class="card">
+                <h2>Matches played</h2>
+                <p class="card-value">380</p>
+                <p class="card-description">จำนวนการแข่งขันที่จบลงแล้ว</p>
+            </article>
+            <article class="card">
+                <h2>Upcoming Matches</h2>
+                <p class="card-value">1024</p>
+                <p class="card-description">การแข่งขันที่กำลังจะเกิดขึ้น</p>
+            </article>
         </section>
 
-        <section class="Recent Matches">
-            <h2>Recent Matches</h2>
-           <article class="match-card">
-                <h3>Manchester United vs Liverpool</h3>
-                <p>Date: 2024-06-15</p>
-                <p>Score: 2 - 1</p>
+       
+       
+        <div class="dashboard-lower">
+        <section class="recent-matches">
+            <div class="matches-heading">
+                <div>
+                    <h2>Recent Matches</h2>
+                    <p>ผลการแข่งขันล่าสุดจากแต่ละคู่</p>
+                </div>
+                <a href="#">View All</a>
+            </div>
+            <article class="match-row">
+                <div class="team"><span class="team-logo"></span><span>FC Thunder</span></div>
+                <strong>2 - 1</strong>
+                <div class="team team-away"><span>Crimson Hawks</span><span class="team-logo"></span></div>
+                <time datetime="2024-09-14">Sat, 14 Sep</time>
             </article>
-            <article class="match-card">
-                <h3>Chelsea vs Arsenal</h3>
-                <p>Date: 2024-06-14</p>
-                <p>Score: 1 - 1</p>
+            <article class="match-row">
+                <div class="team"><span class="team-logo"></span><span>Blue Wave FC</span></div>
+                <strong>1 - 1</strong>
+                <div class="team team-away"><span>Golden Eagles</span><span class="team-logo"></span></div>
+                <time datetime="2024-09-14">Sat, 14 Sep</time>
             </article>
-            <article class="match-card">
-                <h3>Manchester City vs Tottenham</h3>
-                <p>Date: 2024-06-13</p>
-                <p>Score: 3 - 0</p>
+            <article class="match-row">
+                <div class="team"><span class="team-logo"></span><span>Ironclad United</span></div>
+                <strong>3 - 2</strong>
+                <div class="team team-away"><span>Coastal City FC</span><span class="team-logo"></span></div>
+                <time datetime="2024-09-13">Fri, 13 Sep</time>
             </article>
+            <article class="match-row">
+                <div class="team"><span class="team-logo"></span><span>Northside Rovers</span></div>
+                <strong>0 - 0</strong>
+                <div class="team team-away"><span>Silver Wolves</span><span class="team-logo"></span></div>
+                <time datetime="2024-09-13">Fri, 13 Sep</time>
+            </article>
+        </section>
+
+
+        <section class="top-players">
+            <div class="players-heading">
+                <h2>Top Players</h2>
+                <a href="#">View All</a>
+            </div>
+            <article class="player-row">
+                <div class="player-name"><span class="player-avatar"></span><span>Andres Silva</span></div>
+                <strong>24 Goals</strong>
+            </article>
+            <article class="player-row">
+                <div class="player-name"><span class="player-avatar"></span><span>Marcus Reed</span></div>
+                <strong>21 Goals</strong>
+            </article>
+            <article class="player-row">
+                <div class="player-name"><span class="player-avatar"></span><span>Owen Price</span></div>
+                <strong>19 Goals</strong>
+            </article>
+            <article class="player-row">
+                <div class="player-name"><span class="player-avatar"></span><span>Diego Nunez</span></div>
+                <strong>17 Goals</strong>
+            </article>
+        </section>
+        </div>
     </main>
 </body>
 </html>
